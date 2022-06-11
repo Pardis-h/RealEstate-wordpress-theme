@@ -1,20 +1,20 @@
 <?php
 function advertising_post_type_function() {
     $labels = array(
-        'name' => __("building advertise", 'new-theme'),
-        'singular_name' => __("building advertise", 'new-theme'),
-        'menu_name' => __("building advertises", 'new-theme'),
-        'name_admin_bar' => __("building advertise", 'new-theme'),
-        'add_new' => __("add new", 'new-theme'),
-        'add_new_item' => __("add new", 'new-theme'),
-        'new_item' => __("new", 'new-theme'),
-        'edit_item' => __("edit", 'new-theme'),
-        'view_item' => __("view", 'new-theme'),
-        'all_items' => __("all building", 'new-theme'),
-        'search_items' => __("search", 'new-theme'),
-        'parent_item_colon' => __("Parent", 'new-theme'),
-        'not_found' => __("No  found", 'new-theme'),
-        'not_found_in_trash' => __("No  found in Trash", 'new-theme')
+        'name' => __("building advertise", 'realEstate'),
+        'singular_name' => __("building advertise", 'realEstate'),
+        'menu_name' => __("building advertises", 'realEstate'),
+        'name_admin_bar' => __("building advertise", 'realEstate'),
+        'add_new' => __("add new", 'realEstate'),
+        'add_new_item' => __("add new", 'realEstate'),
+        'new_item' => __("new", 'realEstate'),
+        'edit_item' => __("edit", 'realEstate'),
+        'view_item' => __("view", 'realEstate'),
+        'all_items' => __("all building", 'realEstate'),
+        'search_items' => __("search", 'realEstate'),
+        'parent_item_colon' => __("Parent", 'realEstate'),
+        'not_found' => __("No  found", 'realEstate'),
+        'not_found_in_trash' => __("No  found in Trash", 'realEstate')
     );
 
     $args = array(
@@ -50,22 +50,22 @@ function advertising_post_type_function() {
 
 
     $tax_args_labels = array(
-        'name' => _x('category', 'new-theme'),
-        'singular_name' => _x('category', 'new-theme'),
-        'search_items' => __('Search', 'new-theme'),
-        'popular_items' => __('Popular categories', 'new-theme'),
-        'all_items' => __('All categories', 'new-theme'),
-        'parent_item' => __('Parent category', 'new-theme'),
-        'parent_item_colon' => __('Parent category:', 'new-theme'),
-        'edit_item' => __('Edit category', 'new-theme'),
-        'update_item' => __('Update category', 'new-theme'),
-        'add_new_item' => __('Add New category', 'new-theme'),
-        'new_item_name' => __('New category Name', 'new-theme'),
-        'separate_items_with_commas' => __('Separate categories with commas', 'new-theme'),
-        'add_or_remove_items' => __('Add or remove categories', 'new-theme'),
-        'choose_from_most_used' => __('Choose from the most used categories', 'new-theme'),
-        'not_found' => __('No s found.', 'new-theme'),
-        'menu_name' => __('categories', 'new-theme'),
+        'name' => _x('category', 'realEstate'),
+        'singular_name' => _x('category', 'realEstate'),
+        'search_items' => __('Search', 'realEstate'),
+        'popular_items' => __('Popular categories', 'realEstate'),
+        'all_items' => __('All categories', 'realEstate'),
+        'parent_item' => __('Parent category', 'realEstate'),
+        'parent_item_colon' => __('Parent category:', 'realEstate'),
+        'edit_item' => __('Edit category', 'realEstate'),
+        'update_item' => __('Update category', 'realEstate'),
+        'add_new_item' => __('Add New category', 'realEstate'),
+        'new_item_name' => __('New category Name', 'realEstate'),
+        'separate_items_with_commas' => __('Separate categories with commas', 'realEstate'),
+        'add_or_remove_items' => __('Add or remove categories', 'realEstate'),
+        'choose_from_most_used' => __('Choose from the most used categories', 'realEstate'),
+        'not_found' => __('No s found.', 'realEstate'),
+        'menu_name' => __('categories', 'realEstate'),
     );
     $tax_args = array(
         'hierarchical' => true,
@@ -80,7 +80,7 @@ function advertising_post_type_function() {
 }
 add_action('init', 'advertising_post_type_function');
 
-if (get_option('new-theme-add-role-v','0')!=='5'){
+if (get_option('realEstate-add-role-v','0')!=='5'){
     add_role('adviser','مشاور',array(
        'read'=>true,
         'edit_advertising_home'=>true,
@@ -99,5 +99,5 @@ if (get_option('new-theme-add-role-v','0')!=='5'){
         'edit_others_posts'=>true,
         'read_private_posts'=>true,
     ));
-    update_option('new-theme-add-role-v','5');
+    update_option('realEstate-add-role-v','5');
 }

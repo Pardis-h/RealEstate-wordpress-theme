@@ -13,8 +13,8 @@ class my_theme_search_widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'my_theme_search_widget_id', // Base ID
-            esc_html__('mytheme search widget','new-theme'), // Name
-            array( 'description' => __( 'this is search form for my theme', 'new-theme' ), ) // Args
+            esc_html__('mytheme search widget','realEstate'), // Name
+            array( 'description' => __( 'this is search form for my theme', 'realEstate' ), ) // Args
         );
     }
 

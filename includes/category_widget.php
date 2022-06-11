@@ -13,8 +13,8 @@ class my_theme_category_widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'my_theme_category_widget_id', // Base ID
-            esc_html__('mytheme category widget','new-theme'), // Name
-            array( 'description' => __( 'this is category widget for my theme', 'new-theme' ), ) // Args
+            esc_html__('mytheme category widget','realEstate'), // Name
+            array( 'description' => __( 'this is category widget for my theme', 'realEstate' ), ) // Args
         );
     }
 
@@ -67,7 +67,7 @@ class my_theme_category_widget extends WP_Widget {
             $title = $instance[ 'title' ];
         }
         else {
-            $title = __( 'category list ', 'new-theme' );
+            $title = __( 'category list ', 'realEstate' );
         }
         ?>
 

@@ -26,14 +26,14 @@ if (post_password_required()) {
 
         'fields' => apply_filters('comment_form_default_fields', array(
             'author' => sprintf('<div class="form-group"><input type="text" class="form-control"  name="author"  placeholder="%s" value="%s"></div>',
-                esc_html__('your name', 'new-theme'), esc_attr($commenter['comment_author'])),
+                esc_html__('your name', 'realEstate'), esc_attr($commenter['comment_author'])),
             'email' => sprintf('<div class="form-group"><input type="email"  name="email"  class="form-control" placeholder="%s" value="%s"></div>',
-                esc_html__('your email', 'new-theme'), esc_attr($commenter['comment_author_email'])),
+                esc_html__('your email', 'realEstate'), esc_attr($commenter['comment_author_email'])),
             'url' => sprintf('<div class="form-group"><input type="url" class="form-control" name="url" placeholder="%s" value="%s"></div>',
-                esc_html__('your website url', 'new-theme'), esc_attr($commenter['comment_author_url'])),
+                esc_html__('your website url', 'realEstate'), esc_attr($commenter['comment_author_url'])),
             'cookies'=>''
         )),
-        'comment_field' => '<div class="form-group"> <textarea cols="30" name="comment"   rows="10" style="resize: none;" class="form-control" placeholder="'.esc_html__('your comment ...','new-theme').'"></textarea> </div>',
+        'comment_field' => '<div class="form-group"> <textarea cols="30" name="comment"   rows="10" style="resize: none;" class="form-control" placeholder="'.esc_html__('your comment ...','realEstate').'"></textarea> </div>',
         'comment_notes_before'=>'',
         'submit_field'         => '%1$s %2$s',
         'submit_button'        => '<input name="%1$s" type="submit" id="%2$s" class="%3$s btn px-5 hvr-push" value="%4$s" />',

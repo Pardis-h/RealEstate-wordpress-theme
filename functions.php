@@ -6,7 +6,7 @@ add_image_size('archive-picture',300,200,true);
 add_image_size('home-city-pic-big',730,440,true);
 add_image_size('home-city-pic-small',350,440,true);
 
-require_once get_template_directory().'/includes/TGM-Plugin-Activation-2.6.1/new-theme-need-plugins.php';
+require_once get_template_directory().'/includes/TGM-Plugin-Activation-2.6.1/realEstate-need-plugins.php';
 require_once get_template_directory().'/includes/default-items.php';
 require_once get_template_directory().'/includes/search_widget.php';
 require_once get_template_directory().'/includes/category_widget.php';
@@ -25,11 +25,11 @@ function new_theme_comment_count(){
     }else{
         echo 0;
     }
-    esc_html_e('comment','new-theme');
+    esc_html_e('comment','realEstate');
 }
 
 
-load_textdomain('new-theme',get_template_directory().'/languages/'.determine_locale().'.mo');
+load_textdomain('realEstate',get_template_directory().'/languages/'.determine_locale().'.mo');
 
 function new_theme_enqueue_style(){
 /*    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css">*/
@@ -44,16 +44,16 @@ function new_theme_enqueue_style(){
     wp_enqueue_style( 'hover-style', get_template_directory_uri().'/assets/css/hover-min.css', false,'2.3.2' );
     wp_enqueue_style( 'slick-style', get_template_directory_uri().'/assets/css/slick.css', false,'1.0' );
     wp_enqueue_style( 'slick-theme-style', get_template_directory_uri().'/assets/css/slick-theme.css', false,'1.0' );
-    wp_enqueue_style( 'new-theme-style', get_template_directory_uri().'/assets/css/style.css', false,'1.1' );
+    wp_enqueue_style( 'realEstate-style', get_template_directory_uri().'/assets/css/style.css', false,'1.1' );
     wp_enqueue_style( 'fontAwesome-style', get_template_directory_uri().'/assets/css/all.min.css', false,'5.11.2' );
 
     wp_enqueue_script('popper-js',get_template_directory_uri().'/assets/js/popper.min.js',['jquery'],'1',true);
     wp_enqueue_script('bootstrap-js',get_template_directory_uri().'/assets/js/bootstrap.min.js',['popper-js'],'4.3.1',true);
     wp_enqueue_script('slick-js',get_template_directory_uri().'/assets/js/slick.min.js',[],'1',true);
     wp_enqueue_script('font-Awesome-js',get_template_directory_uri().'/assets/js/all.min.js',[],'5.11.2',true);
-    wp_enqueue_script('new-theme-js',get_template_directory_uri().'/assets/js/myscripts.js',['jquery','bootstrap-js','slick-js'],'2',true);
+    wp_enqueue_script('realEstate-js',get_template_directory_uri().'/assets/js/myscripts.js',['jquery','bootstrap-js','slick-js'],'2',true);
 
-    wp_localize_script( 'new-theme-js', 'new_theme_localize', array(
+    wp_localize_script( 'realEstate-js', 'new_theme_localize', array(
         'ajax_url' => admin_url( 'admin-ajax.php' )
     ));
 }
@@ -107,9 +107,9 @@ function mytheme_comment($comment, $args, $depth) {
 
 
 register_nav_menus( array(
-    'header'   => __( 'header Menu', 'new-theme' ),
-    'header_mobile'=>__('header mobile','new-theme'),
-    'footer' => __( 'footer Menu', 'new-theme' )
+    'header'   => __( 'header Menu', 'realEstate' ),
+    'header_mobile'=>__('header mobile','realEstate'),
+    'footer' => __( 'footer Menu', 'realEstate' )
 ) );
 
 
