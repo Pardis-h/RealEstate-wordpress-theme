@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: new theme\n"
+"POT-Creation-Date: 2020-06-17 14:29+0430\n"
+"PO-Revision-Date: 2020-06-17 14:30+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: comments.php:26
+#, php-format
+msgctxt "comments title"
+msgid "One thought on \"%2$s\""
+msgid_plural "%1$s thoughts on \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:47
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:48
+msgid "&amp;larr; Older Comments"
+msgstr ""
+
+#: comments.php:50
+msgid "Newer Comments &amp;rarr;"
+msgstr ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:79
+msgid "your name"
+msgstr "نام خود را وارد کنید"
+
+#: comments.php:81
+msgid "your email"
+msgstr "ایمیل خود را وارد کنید"
+
+#: comments.php:83
+msgid "your website url"
+msgstr "آدرس وبسایت خود را وارد کنید"
+
+#: comments.php:86
+msgid "your comment ..."
+msgstr "دیدگاه شما ..."
+
+#: functions.php:9
+msgid "comment"
+msgstr "دیدگاه"
+
+#. Theme Name of the plugin/theme
+msgid "new theme"
+msgstr "قالب جدید"
+
+#. Description of the plugin/theme
+msgid "this is simple theme"
+msgstr "این یک قالب نمونه می‌باشد"
+
+#. Author of the plugin/theme
+msgid "alireza"
+msgstr "علیرضا"
